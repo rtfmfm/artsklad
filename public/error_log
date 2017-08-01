@@ -151,3 +151,6 @@ Stack trace:
 [01-Aug-2017 19:24:12 EET] PHP Parse error:  syntax error, unexpected 'if' (T_IF), expecting function (T_FUNCTION) in /home/akro060c/public_html/sites/artsklad/app/Http/Controllers/ProductController.php on line 124
 [01-Aug-2017 19:26:51 EET] PHP Parse error:  syntax error, unexpected '{' in /home/akro060c/public_html/sites/artsklad/app/Http/Controllers/ProductController.php on line 91
 [01-Aug-2017 19:44:33 EET] PHP Parse error:  syntax error, unexpected 'if' (T_IF), expecting function (T_FUNCTION) in /home/akro060c/public_html/sites/artsklad/app/Http/Controllers/ProductController.php on line 120
+[01-Aug-2017 23:45:12 EET] PHP Parse error:  syntax error, unexpected ';' in /home/akro060c/public_html/sites/artsklad/app/Http/Controllers/ProductController.php on line 38
+[01-Aug-2017 23:56:23 EET] PHP Parse error:  syntax error, unexpected '$produsers' (T_VARIABLE) in /home/akro060c/public_html/sites/artsklad/app/Http/Controllers/ProductController.php on line 57
+[02-Aug-2017 00:01:32 EET] PHP Parse error:  syntax error, unexpected '}' in /home/akro060c/public_html/sites/artsklad/app/Http/Controllers/ProductController.php on line 32

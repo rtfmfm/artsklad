@@ -9,7 +9,7 @@
 
                 <div class="panel-body" id="products">
                     @foreach ( $products as $product )
-                        <div class="{{$product->produser}}">{{ $product->name }} [{{$product->produser}}]</div>
+                        <div class="{{$product->produser}}">{{ $product->name }} / {{$product->produser}}</div>
                     @endforeach
 
                 </div>

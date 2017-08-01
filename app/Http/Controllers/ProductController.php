@@ -27,12 +27,12 @@ class ProductController extends Controller
 
         session()->put('main_category', $main_category);
 
-
-
-        $products = $this->filterResults($request);
-
-
-
+        if (session()->has('products')) { 
+            $products = session()->get('products');
+        } else {
+            $products = $this->filterResults($request);
+        }
+        
         $produsers = Product::where('produser', '!=', '')
             ->select('produser')->where('groop1', $main_category)
             ->distinct()
@@ -44,8 +44,6 @@ class ProductController extends Controller
             ->distinct()
             ->orderBy('groop2')
         ->get();
-
-
 
         return view('products.products', compact('produsers', 'products', 'main_category', 'categories'));
     }
@@ -125,6 +123,7 @@ class ProductController extends Controller
             $products = Product::where('groop1', $main_category)->get();
         }
 
+        session()->put('products', $products);
         return $products;
 
     }
