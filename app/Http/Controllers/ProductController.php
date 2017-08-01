@@ -25,7 +25,7 @@ class ProductController extends Controller
         // session()->flush();
         session()->put('main_category', $main_category);
         $products = $this->handleResults($request, $main_category);
-        // dump($products);
+
         $produsers = Product::where('produser', '!=', '')
             ->select('produser')->where('groop1', $main_category)
             ->distinct()
