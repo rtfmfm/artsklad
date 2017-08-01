@@ -1,0 +1,146 @@
+[28-Jul-2017 11:54:29 UTC] PHP Fatal error:  Class 'App\Http\Controllers\Product' not found in /home/akro060c/public_html/sites/artsklad/app/Http/Controllers/ProductController.php on line 22
+[28-Jul-2017 11:59:06 UTC] PHP Fatal error:  Class 'App\Http\Controllers\Product' not found in /home/akro060c/public_html/sites/artsklad/app/Http/Controllers/ProductController.php on line 22
+[28-Jul-2017 11:59:17 UTC] PHP Fatal error:  Class 'App\Http\Controllers\Product' not found in /home/akro060c/public_html/sites/artsklad/app/Http/Controllers/ProductController.php on line 22
+[28-Jul-2017 11:59:30 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/akro060c/public_html/sites/artsklad/app/Product.php on line 32
+[28-Jul-2017 12:24:40 UTC] PHP Parse error:  syntax error, unexpected 'foreach' (T_FOREACH) in /home/akro060c/public_html/sites/artsklad/app/Http/Controllers/ProductController.php on line 28
+[28-Jul-2017 13:01:54 UTC] PHP Fatal error:  Call to undefined function App\Http\Controllers\array_count() in /home/akro060c/public_html/sites/artsklad/app/Http/Controllers/ProductController.php on line 23
+[28-Jul-2017 16:53:10 Europe/Sofia] PHP Fatal error:  Uncaught exception 'ReflectionException' with message 'Class config does not exist' in /home/akro060c/public_html/sites/artsklad/vendor/laravel/framework/src/Illuminate/Container/Container.php:729
+Stack trace:
+#0 /home/akro060c/public_html/sites/artsklad/vendor/laravel/framework/src/Illuminate/Container/Container.php(729): ReflectionClass->__construct('config')
+#1 /home/akro060c/public_html/sites/artsklad/vendor/laravel/framework/src/Illuminate/Container/Container.php(608): Illuminate\Container\Container->build('config')
+#2 /home/akro060c/public_html/sites/artsklad/vendor/laravel/framework/src/Illuminate/Container/Container.php(575): Illuminate\Container\Container->resolve('config')
+#3 /home/akro060c/public_html/sites/artsklad/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(728): Illuminate\Container\Container->make('config')
+#4 /home/akro060c/public_html/sites/artsklad/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(106): Illuminate\Foundation\Application->make('config')
+#5  in /home/akro060c/public_html/sites/artsklad/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 729
+[30-Jul-2017 09:58:31 EET] PHP Fatal error:  Call to a member function has() on string in /home/akro060c/public_html/sites/artsklad/storage/framework/views/357c676bed6b5dfc44ea3724679a919f29d4a862.php on line 80
+[30-Jul-2017 10:00:05 EET] PHP Parse error:  syntax error, unexpected '/' in /home/akro060c/public_html/sites/artsklad/storage/framework/views/357c676bed6b5dfc44ea3724679a919f29d4a862.php on line 80
+[30-Jul-2017 10:01:34 EET] PHP Fatal error:  Class 'dumpURL' not found in /home/akro060c/public_html/sites/artsklad/storage/framework/views/357c676bed6b5dfc44ea3724679a919f29d4a862.php on line 80
+[30-Jul-2017 10:41:02 EET] PHP Parse error:  syntax error, unexpected ')' in /home/akro060c/public_html/sites/artsklad/routes/web.php on line 27
+[30-Jul-2017 10:41:28 EET] PHP Parse error:  syntax error, unexpected '{', expecting '(' in /home/akro060c/public_html/sites/artsklad/app/Http/Controllers/ProductController.php on line 98
+[30-Jul-2017 12:05:52 EET] PHP Fatal error:  Class 'Product' not found in /home/akro060c/public_html/sites/artsklad/routes/web.php on line 27
+[30-Jul-2017 12:07:45 EET] PHP Fatal error:  Class 'Product' not found in /home/akro060c/public_html/sites/artsklad/routes/web.php on line 27
+[30-Jul-2017 12:07:59 EET] PHP Fatal error:  Class 'Product' not found in /home/akro060c/public_html/sites/artsklad/routes/web.php on line 27
+[30-Jul-2017 12:08:54 EET] PHP Fatal error:  Class 'Product' not found in /home/akro060c/public_html/sites/artsklad/routes/web.php on line 27
+[30-Jul-2017 16:07:28 EET] PHP Fatal error:  Class 'Product' not found in /home/akro060c/public_html/sites/artsklad/routes/web.php on line 26
+[30-Jul-2017 17:23:34 EET] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE) in /home/akro060c/public_html/sites/artsklad/app/Http/Controllers/ProductController.php on line 117
+[30-Jul-2017 17:26:34 EET] PHP Parse error:  syntax error, unexpected end of file, expecting function (T_FUNCTION) in /home/akro060c/public_html/sites/artsklad/app/Http/Controllers/ProductController.php on line 123
+[30-Jul-2017 17:26:56 EET] PHP Parse error:  syntax error, unexpected end of file, expecting function (T_FUNCTION) in /home/akro060c/public_html/sites/artsklad/app/Http/Controllers/ProductController.php on line 122
+[30-Jul-2017 17:26:57 EET] PHP Parse error:  syntax error, unexpected end of file, expecting function (T_FUNCTION) in /home/akro060c/public_html/sites/artsklad/app/Http/Controllers/ProductController.php on line 122
+[30-Jul-2017 19:47:22 EET] PHP Parse error:  syntax error, unexpected ';' in /home/akro060c/public_html/sites/artsklad/app/Http/Controllers/ProductController.php on line 15
+[30-Jul-2017 19:52:33 EET] PHP Parse error:  syntax error, unexpected '<' in /home/akro060c/public_html/sites/artsklad/storage/framework/views/fc1dee2ac3b07c4c16676c0b6c45a9553df2e965.php on line 17
+[30-Jul-2017 19:53:37 EET] PHP Parse error:  syntax error, unexpected '<' in /home/akro060c/public_html/sites/artsklad/storage/framework/views/fc1dee2ac3b07c4c16676c0b6c45a9553df2e965.php on line 17
+[30-Jul-2017 19:53:50 EET] PHP Parse error:  syntax error, unexpected '<' in /home/akro060c/public_html/sites/artsklad/storage/framework/views/fc1dee2ac3b07c4c16676c0b6c45a9553df2e965.php on line 17
+[30-Jul-2017 19:54:25 EET] PHP Parse error:  syntax error, unexpected '<' in /home/akro060c/public_html/sites/artsklad/storage/framework/views/fc1dee2ac3b07c4c16676c0b6c45a9553df2e965.php on line 17
+[30-Jul-2017 20:04:22 EET] PHP Parse error:  syntax error, unexpected '{' in /home/akro060c/public_html/sites/artsklad/app/Http/Controllers/ProductController.php on line 73
+[30-Jul-2017 20:18:55 EET] PHP Fatal error:  Call to undefined method Illuminate\Session\Store::pusg() in /home/akro060c/public_html/sites/artsklad/app/Http/Controllers/ProductController.php on line 76
+[30-Jul-2017 20:18:59 EET] PHP Fatal error:  Call to undefined method Illuminate\Session\Store::pusg() in /home/akro060c/public_html/sites/artsklad/app/Http/Controllers/ProductController.php on line 76
+[30-Jul-2017 21:14:54 EET] PHP Parse error:  syntax error, unexpected end of file, expecting function (T_FUNCTION) in /home/akro060c/public_html/sites/artsklad/app/Http/Controllers/ProductController.php on line 115
+[30-Jul-2017 21:14:56 EET] PHP Parse error:  syntax error, unexpected end of file, expecting function (T_FUNCTION) in /home/akro060c/public_html/sites/artsklad/app/Http/Controllers/ProductController.php on line 115
+[30-Jul-2017 21:20:04 EET] PHP Parse error:  syntax error, unexpected 'session' (T_STRING) in /home/akro060c/public_html/sites/artsklad/app/Http/Controllers/ProductController.php on line 75
+[30-Jul-2017 21:20:21 EET] PHP Parse error:  syntax error, unexpected '{' in /home/akro060c/public_html/sites/artsklad/app/Http/Controllers/ProductController.php on line 74
+[30-Jul-2017 21:20:29 EET] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE), expecting function (T_FUNCTION) in /home/akro060c/public_html/sites/artsklad/app/Http/Controllers/ProductController.php on line 77
+[30-Jul-2017 21:42:46 EET] PHP Parse error:  syntax error, unexpected '}' in /home/akro060c/public_html/sites/artsklad/app/Http/Controllers/ProductController.php on line 19
+[30-Jul-2017 22:10:17 EET] PHP Parse error:  syntax error, unexpected ')' in /home/akro060c/public_html/sites/artsklad/app/Http/Controllers/ProductController.php on line 18
+[30-Jul-2017 22:10:44 EET] PHP Parse error:  syntax error, unexpected ';' in /home/akro060c/public_html/sites/artsklad/app/Http/Controllers/ProductController.php on line 18
+[30-Jul-2017 22:16:24 EET] PHP Parse error:  syntax error, unexpected ';' in /home/akro060c/public_html/sites/artsklad/app/Http/Controllers/ProductController.php on line 19
+[30-Jul-2017 22:56:57 EET] PHP Parse error:  syntax error, unexpected 'foreach' (T_FOREACH), expecting function (T_FUNCTION) in /home/akro060c/public_html/sites/artsklad/app/Http/Controllers/ProductController.php on line 26
+[31-Jul-2017 08:31:14 EET] PHP Parse error:  syntax error, unexpected 'array' (T_ARRAY) in /home/akro060c/public_html/sites/artsklad/app/Http/Controllers/ProductController.php on line 30
+[31-Jul-2017 08:32:22 EET] PHP Fatal error:  Call to a member function product() on array in /home/akro060c/public_html/sites/artsklad/app/Http/Controllers/ProductController.php on line 34
+[31-Jul-2017 08:33:16 EET] PHP Fatal error:  Cannot access protected property Illuminate\Pagination\LengthAwarePaginator::$items in /home/akro060c/public_html/sites/artsklad/app/Http/Controllers/ProductController.php on line 34
+[31-Jul-2017 08:33:44 EET] PHP Fatal error:  Cannot access protected property Illuminate\Pagination\LengthAwarePaginator::$items in /home/akro060c/public_html/sites/artsklad/app/Http/Controllers/ProductController.php on line 34
+[31-Jul-2017 08:33:45 EET] PHP Fatal error:  Cannot access protected property Illuminate\Pagination\LengthAwarePaginator::$items in /home/akro060c/public_html/sites/artsklad/app/Http/Controllers/ProductController.php on line 34
+[31-Jul-2017 08:33:54 EET] PHP Fatal error:  Cannot access protected property Illuminate\Pagination\LengthAwarePaginator::$items in /home/akro060c/public_html/sites/artsklad/app/Http/Controllers/ProductController.php on line 34
+[31-Jul-2017 08:33:55 EET] PHP Fatal error:  Cannot access protected property Illuminate\Pagination\LengthAwarePaginator::$items in /home/akro060c/public_html/sites/artsklad/app/Http/Controllers/ProductController.php on line 34
+[31-Jul-2017 08:34:21 EET] PHP Fatal error:  Cannot access protected property Illuminate\Pagination\LengthAwarePaginator::$items in /home/akro060c/public_html/sites/artsklad/app/Http/Controllers/ProductController.php on line 34
+[31-Jul-2017 08:34:59 EET] PHP Fatal error:  Call to a member function items() on array in /home/akro060c/public_html/sites/artsklad/app/Http/Controllers/ProductController.php on line 34
+[31-Jul-2017 08:35:27 EET] PHP Fatal error:  Call to a member function items() on array in /home/akro060c/public_html/sites/artsklad/app/Http/Controllers/ProductController.php on line 35
+[31-Jul-2017 08:35:35 EET] PHP Fatal error:  Call to a member function items() on array in /home/akro060c/public_html/sites/artsklad/app/Http/Controllers/ProductController.php on line 34
+[31-Jul-2017 08:35:37 EET] PHP Fatal error:  Call to a member function items() on array in /home/akro060c/public_html/sites/artsklad/app/Http/Controllers/ProductController.php on line 34
+[31-Jul-2017 08:43:51 EET] PHP Fatal error:  Call to a member function links() on array in /home/akro060c/public_html/sites/artsklad/storage/framework/views/82ce29430ff8c5ec0072357ba3714d06392a922f.php on line 15
+[31-Jul-2017 08:45:09 EET] PHP Fatal error:  [] operator not supported for strings in /home/akro060c/public_html/sites/artsklad/app/Http/Controllers/ProductController.php on line 31
+[31-Jul-2017 08:45:29 EET] PHP Fatal error:  [] operator not supported for strings in /home/akro060c/public_html/sites/artsklad/app/Http/Controllers/ProductController.php on line 32
+[31-Jul-2017 08:46:39 EET] PHP Fatal error:  [] operator not supported for strings in /home/akro060c/public_html/sites/artsklad/app/Http/Controllers/ProductController.php on line 32
+[31-Jul-2017 08:50:19 EET] PHP Fatal error:  [] operator not supported for strings in /home/akro060c/public_html/sites/artsklad/app/Http/Controllers/ProductController.php on line 32
+[31-Jul-2017 09:37:36 EET] PHP Parse error:  syntax error, unexpected '{' in /home/akro060c/public_html/sites/artsklad/app/Http/Controllers/ProductController.php on line 19
+[31-Jul-2017 09:37:52 EET] PHP Parse error:  syntax error, unexpected 'dump' (T_STRING), expecting function (T_FUNCTION) in /home/akro060c/public_html/sites/artsklad/app/Http/Controllers/ProductController.php on line 23
+[31-Jul-2017 09:45:03 EET] PHP Parse error:  syntax error, unexpected 'p' (T_STRING) in /home/akro060c/public_html/sites/artsklad/app/Http/Controllers/ProductController.php on line 29
+[31-Jul-2017 09:46:59 EET] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /home/akro060c/public_html/sites/artsklad/app/Http/Controllers/ProductController.php on line 28
+[31-Jul-2017 10:02:52 EET] PHP Fatal error:  Call to undefined method Illuminate\Session\Store::hass() in /home/akro060c/public_html/sites/artsklad/vendor/laravel/framework/src/Illuminate/Support/Manager.php on line 138
+[31-Jul-2017 10:25:16 EET] PHP Parse error:  syntax error, unexpected end of file, expecting function (T_FUNCTION) in /home/akro060c/public_html/sites/artsklad/app/Http/Controllers/ProductController.php on line 113
+[31-Jul-2017 10:36:24 EET] PHP Parse error:  syntax error, unexpected ']' in /home/akro060c/public_html/sites/artsklad/app/Http/Controllers/ProductController.php on line 107
+[31-Jul-2017 10:45:52 EET] PHP Fatal error:  Call to a member function items() on array in /home/akro060c/public_html/sites/artsklad/app/Http/Controllers/ProductController.php on line 19
+[31-Jul-2017 10:46:06 EET] PHP Fatal error:  Call to a member function items() on null in /home/akro060c/public_html/sites/artsklad/app/Http/Controllers/ProductController.php on line 19
+[31-Jul-2017 10:46:10 EET] PHP Fatal error:  Call to a member function items() on null in /home/akro060c/public_html/sites/artsklad/app/Http/Controllers/ProductController.php on line 19
+[31-Jul-2017 10:46:11 EET] PHP Fatal error:  Call to a member function items() on null in /home/akro060c/public_html/sites/artsklad/app/Http/Controllers/ProductController.php on line 19
+[31-Jul-2017 11:03:58 EET] PHP Fatal error:  Call to a member function items() on array in /home/akro060c/public_html/sites/artsklad/app/Http/Controllers/ProductController.php on line 22
+[31-Jul-2017 11:03:59 EET] PHP Fatal error:  Call to a member function items() on array in /home/akro060c/public_html/sites/artsklad/app/Http/Controllers/ProductController.php on line 22
+[31-Jul-2017 11:03:59 EET] PHP Fatal error:  Call to a member function items() on array in /home/akro060c/public_html/sites/artsklad/app/Http/Controllers/ProductController.php on line 22
+[31-Jul-2017 11:04:00 EET] PHP Fatal error:  Call to a member function items() on array in /home/akro060c/public_html/sites/artsklad/app/Http/Controllers/ProductController.php on line 22
+[31-Jul-2017 11:04:00 EET] PHP Fatal error:  Call to a member function items() on array in /home/akro060c/public_html/sites/artsklad/app/Http/Controllers/ProductController.php on line 22
+[31-Jul-2017 11:04:00 EET] PHP Fatal error:  Call to a member function items() on array in /home/akro060c/public_html/sites/artsklad/app/Http/Controllers/ProductController.php on line 22
+[31-Jul-2017 11:04:23 EET] PHP Fatal error:  Call to a member function links() on array in /home/akro060c/public_html/sites/artsklad/storage/framework/views/82ce29430ff8c5ec0072357ba3714d06392a922f.php on line 15
+[31-Jul-2017 11:04:27 EET] PHP Fatal error:  Call to a member function links() on array in /home/akro060c/public_html/sites/artsklad/storage/framework/views/82ce29430ff8c5ec0072357ba3714d06392a922f.php on line 15
+[31-Jul-2017 11:04:28 EET] PHP Fatal error:  Call to a member function links() on array in /home/akro060c/public_html/sites/artsklad/storage/framework/views/82ce29430ff8c5ec0072357ba3714d06392a922f.php on line 15
+[31-Jul-2017 11:23:56 EET] PHP Parse error:  syntax error, unexpected ',' in /home/akro060c/public_html/sites/artsklad/app/Http/Controllers/ProductController.php on line 99
+[31-Jul-2017 11:24:00 EET] PHP Parse error:  syntax error, unexpected '$filter' (T_VARIABLE) in /home/akro060c/public_html/sites/artsklad/app/Http/Controllers/ProductController.php on line 99
+[31-Jul-2017 11:24:01 EET] PHP Parse error:  syntax error, unexpected '$filter' (T_VARIABLE) in /home/akro060c/public_html/sites/artsklad/app/Http/Controllers/ProductController.php on line 99
+[31-Jul-2017 11:24:09 EET] PHP Fatal error:  Call to a member function items() on array in /home/akro060c/public_html/sites/artsklad/app/Http/Controllers/ProductController.php on line 22
+[31-Jul-2017 11:24:10 EET] PHP Fatal error:  Call to a member function items() on array in /home/akro060c/public_html/sites/artsklad/app/Http/Controllers/ProductController.php on line 22
+[31-Jul-2017 11:25:12 EET] PHP Fatal error:  Call to a member function items() on array in /home/akro060c/public_html/sites/artsklad/app/Http/Controllers/ProductController.php on line 22
+[31-Jul-2017 11:25:19 EET] PHP Fatal error:  Call to a member function items() on array in /home/akro060c/public_html/sites/artsklad/app/Http/Controllers/ProductController.php on line 22
+[31-Jul-2017 11:25:20 EET] PHP Fatal error:  Call to a member function items() on array in /home/akro060c/public_html/sites/artsklad/app/Http/Controllers/ProductController.php on line 22
+[31-Jul-2017 11:25:34 EET] PHP Fatal error:  Call to a member function items() on array in /home/akro060c/public_html/sites/artsklad/app/Http/Controllers/ProductController.php on line 22
+[31-Jul-2017 11:25:34 EET] PHP Fatal error:  Call to a member function items() on array in /home/akro060c/public_html/sites/artsklad/app/Http/Controllers/ProductController.php on line 22
+[31-Jul-2017 11:28:37 EET] PHP Parse error:  syntax error, unexpected ']' in /home/akro060c/public_html/sites/artsklad/app/Http/Controllers/ProductController.php on line 97
+[31-Jul-2017 11:37:24 EET] PHP Fatal error:  Call to a member function items() on array in /home/akro060c/public_html/sites/artsklad/app/Http/Controllers/ProductController.php on line 23
+[31-Jul-2017 11:37:27 EET] PHP Fatal error:  Call to a member function items() on array in /home/akro060c/public_html/sites/artsklad/app/Http/Controllers/ProductController.php on line 23
+[31-Jul-2017 11:43:01 EET] PHP Parse error:  syntax error, unexpected '}' in /home/akro060c/public_html/sites/artsklad/app/Http/Controllers/ProductController.php on line 95
+[31-Jul-2017 11:43:13 EET] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN), expecting function (T_FUNCTION) in /home/akro060c/public_html/sites/artsklad/app/Http/Controllers/ProductController.php on line 106
+[31-Jul-2017 11:43:14 EET] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN), expecting function (T_FUNCTION) in /home/akro060c/public_html/sites/artsklad/app/Http/Controllers/ProductController.php on line 106
+[31-Jul-2017 11:51:29 EET] PHP Fatal error:  Call to a member function links() on array in /home/akro060c/public_html/sites/artsklad/storage/framework/views/82ce29430ff8c5ec0072357ba3714d06392a922f.php on line 15
+[31-Jul-2017 11:52:15 EET] PHP Fatal error:  Call to a member function links() on array in /home/akro060c/public_html/sites/artsklad/storage/framework/views/82ce29430ff8c5ec0072357ba3714d06392a922f.php on line 15
+[31-Jul-2017 11:52:19 EET] PHP Fatal error:  Call to a member function links() on array in /home/akro060c/public_html/sites/artsklad/storage/framework/views/82ce29430ff8c5ec0072357ba3714d06392a922f.php on line 15
+[31-Jul-2017 11:52:43 EET] PHP Fatal error:  Call to a member function links() on array in /home/akro060c/public_html/sites/artsklad/storage/framework/views/82ce29430ff8c5ec0072357ba3714d06392a922f.php on line 15
+[31-Jul-2017 11:52:45 EET] PHP Fatal error:  Call to a member function links() on array in /home/akro060c/public_html/sites/artsklad/storage/framework/views/82ce29430ff8c5ec0072357ba3714d06392a922f.php on line 15
+[31-Jul-2017 11:52:45 EET] PHP Fatal error:  Call to a member function links() on array in /home/akro060c/public_html/sites/artsklad/storage/framework/views/82ce29430ff8c5ec0072357ba3714d06392a922f.php on line 15
+[31-Jul-2017 11:52:46 EET] PHP Fatal error:  Call to a member function links() on array in /home/akro060c/public_html/sites/artsklad/storage/framework/views/82ce29430ff8c5ec0072357ba3714d06392a922f.php on line 15
+[31-Jul-2017 11:53:05 EET] PHP Fatal error:  Call to a member function links() on array in /home/akro060c/public_html/sites/artsklad/storage/framework/views/82ce29430ff8c5ec0072357ba3714d06392a922f.php on line 15
+[31-Jul-2017 11:53:13 EET] PHP Fatal error:  Call to a member function links() on array in /home/akro060c/public_html/sites/artsklad/storage/framework/views/82ce29430ff8c5ec0072357ba3714d06392a922f.php on line 15
+[31-Jul-2017 11:53:14 EET] PHP Fatal error:  Call to a member function links() on array in /home/akro060c/public_html/sites/artsklad/storage/framework/views/82ce29430ff8c5ec0072357ba3714d06392a922f.php on line 15
+[31-Jul-2017 11:53:14 EET] PHP Fatal error:  Call to a member function links() on array in /home/akro060c/public_html/sites/artsklad/storage/framework/views/82ce29430ff8c5ec0072357ba3714d06392a922f.php on line 15
+[31-Jul-2017 11:53:15 EET] PHP Fatal error:  Call to a member function links() on array in /home/akro060c/public_html/sites/artsklad/storage/framework/views/82ce29430ff8c5ec0072357ba3714d06392a922f.php on line 15
+[31-Jul-2017 11:53:15 EET] PHP Fatal error:  Call to a member function links() on array in /home/akro060c/public_html/sites/artsklad/storage/framework/views/82ce29430ff8c5ec0072357ba3714d06392a922f.php on line 15
+[31-Jul-2017 11:53:15 EET] PHP Fatal error:  Call to a member function links() on array in /home/akro060c/public_html/sites/artsklad/storage/framework/views/82ce29430ff8c5ec0072357ba3714d06392a922f.php on line 15
+[31-Jul-2017 11:53:15 EET] PHP Fatal error:  Call to a member function links() on array in /home/akro060c/public_html/sites/artsklad/storage/framework/views/82ce29430ff8c5ec0072357ba3714d06392a922f.php on line 15
+[31-Jul-2017 11:53:16 EET] PHP Fatal error:  Call to a member function links() on array in /home/akro060c/public_html/sites/artsklad/storage/framework/views/82ce29430ff8c5ec0072357ba3714d06392a922f.php on line 15
+[31-Jul-2017 11:53:16 EET] PHP Fatal error:  Call to a member function links() on array in /home/akro060c/public_html/sites/artsklad/storage/framework/views/82ce29430ff8c5ec0072357ba3714d06392a922f.php on line 15
+[31-Jul-2017 11:53:22 EET] PHP Fatal error:  Call to a member function links() on array in /home/akro060c/public_html/sites/artsklad/storage/framework/views/82ce29430ff8c5ec0072357ba3714d06392a922f.php on line 15
+[31-Jul-2017 11:53:37 EET] PHP Parse error:  syntax error, unexpected 'strpos' (T_STRING) in /home/akro060c/public_html/sites/artsklad/app/Http/Controllers/ProductController.php on line 100
+[31-Jul-2017 11:53:54 EET] PHP Parse error:  syntax error, unexpected 'strpos' (T_STRING) in /home/akro060c/public_html/sites/artsklad/app/Http/Controllers/ProductController.php on line 100
+[31-Jul-2017 11:53:55 EET] PHP Parse error:  syntax error, unexpected 'strpos' (T_STRING) in /home/akro060c/public_html/sites/artsklad/app/Http/Controllers/ProductController.php on line 100
+[31-Jul-2017 11:53:55 EET] PHP Parse error:  syntax error, unexpected 'strpos' (T_STRING) in /home/akro060c/public_html/sites/artsklad/app/Http/Controllers/ProductController.php on line 100
+[31-Jul-2017 11:53:56 EET] PHP Parse error:  syntax error, unexpected 'strpos' (T_STRING) in /home/akro060c/public_html/sites/artsklad/app/Http/Controllers/ProductController.php on line 100
+[31-Jul-2017 11:56:57 EET] PHP Fatal error:  Call to undefined function App\Http\Controllers\grep_prep() in /home/akro060c/public_html/sites/artsklad/app/Http/Controllers/ProductController.php on line 98
+[31-Jul-2017 11:57:12 EET] PHP Parse error:  syntax error, unexpected 'grep_prep' (T_STRING), expecting '(' in /home/akro060c/public_html/sites/artsklad/app/Http/Controllers/ProductController.php on line 98
+[31-Jul-2017 11:57:44 EET] PHP Fatal error:  Call to undefined function App\Http\Controllers\grep_prep() in /home/akro060c/public_html/sites/artsklad/app/Http/Controllers/ProductController.php on line 98
+[31-Jul-2017 12:50:25 EET] PHP Fatal error:  Call to a member function links() on array in /home/akro060c/public_html/sites/artsklad/storage/framework/views/82ce29430ff8c5ec0072357ba3714d06392a922f.php on line 15
+[31-Jul-2017 12:50:27 EET] PHP Fatal error:  Call to a member function links() on array in /home/akro060c/public_html/sites/artsklad/storage/framework/views/82ce29430ff8c5ec0072357ba3714d06392a922f.php on line 15
+[31-Jul-2017 12:59:14 EET] PHP Fatal error:  Call to a member function items() on array in /home/akro060c/public_html/sites/artsklad/app/Http/Controllers/ProductController.php on line 112
+[31-Jul-2017 13:02:40 EET] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /home/akro060c/public_html/sites/artsklad/app/Http/Controllers/ProductController.php on line 109
+[31-Jul-2017 13:05:30 EET] PHP Parse error:  syntax error, unexpected ';' in /home/akro060c/public_html/sites/artsklad/app/Http/Controllers/ProductController.php on line 23
+[31-Jul-2017 13:23:16 EET] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN), expecting function (T_FUNCTION) in /home/akro060c/public_html/sites/artsklad/app/Http/Controllers/ProductController.php on line 115
+[31-Jul-2017 13:49:58 EET] PHP Fatal error:  Function name must be a string in /home/akro060c/public_html/sites/artsklad/app/Http/Controllers/ProductController.php on line 87
+[31-Jul-2017 13:49:59 EET] PHP Fatal error:  Function name must be a string in /home/akro060c/public_html/sites/artsklad/app/Http/Controllers/ProductController.php on line 87
+[31-Jul-2017 13:50:40 EET] PHP Fatal error:  Function name must be a string in /home/akro060c/public_html/sites/artsklad/app/Http/Controllers/ProductController.php on line 87
+[31-Jul-2017 13:53:04 EET] PHP Fatal error:  Cannot use isset() on the result of a function call (you can use "null !== func()" instead) in /home/akro060c/public_html/sites/artsklad/app/Http/Controllers/ProductController.php on line 87
+[31-Jul-2017 13:53:06 EET] PHP Fatal error:  Cannot use isset() on the result of a function call (you can use "null !== func()" instead) in /home/akro060c/public_html/sites/artsklad/app/Http/Controllers/ProductController.php on line 87
+[31-Jul-2017 13:53:27 EET] PHP Parse error:  syntax error, unexpected ')' in /home/akro060c/public_html/sites/artsklad/app/Http/Controllers/ProductController.php on line 87
+[31-Jul-2017 14:12:43 EET] PHP Parse error:  syntax error, unexpected '{' in /home/akro060c/public_html/sites/artsklad/app/Http/Controllers/ProductController.php on line 89
+[31-Jul-2017 15:09:06 EET] PHP Fatal error:  Cannot use isset() on the result of a function call (you can use "null !== func()" instead) in /home/akro060c/public_html/sites/artsklad/app/Http/Controllers/ProductController.php on line 89
+[31-Jul-2017 15:46:46 EET] PHP Parse error:  syntax error, unexpected '[', expecting variable (T_VARIABLE) in /home/akro060c/public_html/sites/artsklad/app/Http/Controllers/ProductController.php on line 77
+[31-Jul-2017 15:59:14 EET] PHP Parse error:  syntax error, unexpected '$categories' (T_VARIABLE), expecting ';' or '{' in /home/akro060c/public_html/sites/artsklad/app/Http/Controllers/ProductController.php on line 14
+[31-Jul-2017 15:59:40 EET] PHP Parse error:  syntax error, unexpected '$categories' (T_VARIABLE), expecting ';' or '{' in /home/akro060c/public_html/sites/artsklad/app/Http/Controllers/ProductController.php on line 14
+[31-Jul-2017 15:59:44 EET] PHP Parse error:  syntax error, unexpected '$categories' (T_VARIABLE), expecting ';' or '{' in /home/akro060c/public_html/sites/artsklad/app/Http/Controllers/ProductController.php on line 14
+[31-Jul-2017 15:59:46 EET] PHP Parse error:  syntax error, unexpected '$categories' (T_VARIABLE), expecting ';' or '{' in /home/akro060c/public_html/sites/artsklad/app/Http/Controllers/ProductController.php on line 14
+[31-Jul-2017 16:19:49 EET] PHP Parse error:  syntax error, unexpected ';' in /home/akro060c/public_html/sites/artsklad/app/Http/Controllers/ProductController.php on line 24
+[31-Jul-2017 16:19:54 EET] PHP Parse error:  syntax error, unexpected ';' in /home/akro060c/public_html/sites/artsklad/app/Http/Controllers/ProductController.php on line 24
