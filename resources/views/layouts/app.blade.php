@@ -49,7 +49,7 @@
                             {{-- <li><a href="{{ route('register') }}">Register</a></li> --}}
                         @else
                             <li>
-                                <a href="{{ route('home')}}">Products</a>
+                                <a href="{{ route('home')}}">Категории</a>
                             </li>
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
@@ -105,18 +105,22 @@
 
 
 <script>
-  $('#filters').on('change', function(e){
-    console.log(e);
-    var filters = e.target.value;
-
-    $.get('{{ url('products') }}/filters/ajax-division?filters=' + filters, function(data) {
-      console.log(data);
-      $('#products').empty();
-      $.each(data, function(index,prodObject){
-        $('#products').append('<div class=' + prodObject.produser + '>' + prodObject.name + ' / ' + prodObject.produser + '</div>');
-      });
-    });
-  });
+$("#filters").on('submit', function(e) {
+   e.preventDefault();
+   var data = $(this).serialize();
+   $.post(
+    'http://dev.akrozia.org/products/filters/ajax-division',
+       data,
+       function(data) {
+           $('#products').empty();
+           $.each(data, function(index, prodObject) {
+               $('#products').append('<div class=' + prodObject.produser + '>' + prodObject.name + ' / ' + prodObject.produser + '</div>');
+           });
+       });
+});
+$("#filters input:checkbox").on('change', function(e){
+$("#filters").trigger('submit');
+});
 </script>
 </body>
 </html>

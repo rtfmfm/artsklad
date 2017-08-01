@@ -144,3 +144,10 @@ Stack trace:
 [31-Jul-2017 15:59:46 EET] PHP Parse error:  syntax error, unexpected '$categories' (T_VARIABLE), expecting ';' or '{' in /home/akro060c/public_html/sites/artsklad/app/Http/Controllers/ProductController.php on line 14
 [31-Jul-2017 16:19:49 EET] PHP Parse error:  syntax error, unexpected ';' in /home/akro060c/public_html/sites/artsklad/app/Http/Controllers/ProductController.php on line 24
 [31-Jul-2017 16:19:54 EET] PHP Parse error:  syntax error, unexpected ';' in /home/akro060c/public_html/sites/artsklad/app/Http/Controllers/ProductController.php on line 24
+[01-Aug-2017 18:28:22 EET] PHP Parse error:  syntax error, unexpected '$main_category' (T_VARIABLE), expecting ')' in /home/akro060c/public_html/sites/artsklad/app/Http/Controllers/ProductController.php on line 80
+[01-Aug-2017 18:28:28 EET] PHP Parse error:  syntax error, unexpected '$main_category' (T_VARIABLE), expecting ')' in /home/akro060c/public_html/sites/artsklad/app/Http/Controllers/ProductController.php on line 80
+[01-Aug-2017 18:41:28 EET] PHP Parse error:  syntax error, unexpected 'if' (T_IF), expecting function (T_FUNCTION) in /home/akro060c/public_html/sites/artsklad/app/Http/Controllers/ProductController.php on line 99
+[01-Aug-2017 18:46:59 EET] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in /home/akro060c/public_html/sites/artsklad/app/Http/Controllers/ProductController.php on line 123
+[01-Aug-2017 19:24:12 EET] PHP Parse error:  syntax error, unexpected 'if' (T_IF), expecting function (T_FUNCTION) in /home/akro060c/public_html/sites/artsklad/app/Http/Controllers/ProductController.php on line 124
+[01-Aug-2017 19:26:51 EET] PHP Parse error:  syntax error, unexpected '{' in /home/akro060c/public_html/sites/artsklad/app/Http/Controllers/ProductController.php on line 91
+[01-Aug-2017 19:44:33 EET] PHP Parse error:  syntax error, unexpected 'if' (T_IF), expecting function (T_FUNCTION) in /home/akro060c/public_html/sites/artsklad/app/Http/Controllers/ProductController.php on line 120

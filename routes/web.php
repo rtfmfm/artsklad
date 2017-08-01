@@ -8,7 +8,7 @@ Route::get('/home', 'ProductController@index')->name('home');
 
 Route::group(['middleware' => 'auth'], function() {
 	Route::any('/products/{main_category?}', 'ProductController@products')->name('products');
-	Route::get('/products/filters/ajax-division', 'ProductController@filterResults');
+	Route::any('/products/filters/ajax-division', 'ProductController@filterResults');
 
 });
 

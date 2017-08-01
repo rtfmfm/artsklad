@@ -23,8 +23,15 @@ class ProductController extends Controller
     {   
 
         // session()->flush();
+        // dump(session()->all());
+
         session()->put('main_category', $main_category);
-        $products = $this->handleResults($request, $main_category);
+
+
+
+        $products = $this->filterResults($request);
+
+
 
         $produsers = Product::where('produser', '!=', '')
             ->select('produser')->where('groop1', $main_category)
@@ -45,41 +52,79 @@ class ProductController extends Controller
 
 
 
-    public function handleResults(Request $request) {
+    // public function handleResults(Request $request) {
 
-        $value = $request->input('filters');
-        $main_category = session()->get('main_category');
-        if(session()->has('filters_'.$value)) {
-            session()->forget('filters_'.$value);
-        } else {
-            $request->session()->put('filters_'.$value, $value);
-        }
+    //     $value = $request->input('filters');
+    //     $main_category = session()->get('main_category');
+    //     if(session()->has('filters_'.$value)) {
+    //         session()->forget('filters_'.$value);
+    //     } else {
+    //         $request->session()->put('filters_'.$value, $value);
+    //     }
 
 
-        $filters = session()->all();
+    //     $filters = session()->all();
         
-        $pattern = '/filters/';
-        $flags = 0;
-        $keys = preg_grep( $pattern, array_keys( $filters ), $flags );
-        $vals = array();
-        foreach ( $keys as $key ) {
-            $vals[$key] = $filters[$key];
-        }
+    //     $pattern = '/filters/';
+    //     $flags = 0;
+    //     $keys = preg_grep( $pattern, array_keys( $filters ), $flags );
+    //     $vals = array();
+    //     foreach ( $keys as $key ) {
+    //         $vals[$key] = $filters[$key];
+    //     }
 
-        $products = Product::whereIn('produser', $vals)->where('groop1', $main_category)->paginate(20);
+    //     $products = Product::whereIn('produser', $vals)->where('groop1', $main_category)->paginate(20);
         
 
-        if (empty($products->items())) { 
-            $products = Product::where('groop1', $main_category)->paginate(20);
-        }
+    //     if (empty($products->items())) { 
+    //         $products = Product::where('groop1', $main_category)->paginate(20);
+    //     }
 
-        return $products;
+    //     return $products;
 
-    }
+    // }
     
     public function filterResults(Request $request) {
-        $products = $this->handleResults($request);
-        $products = $products->items();
+
+        if(session()->has('main_category')) {
+            $main_category = session()->get('main_category');
+        } else { 
+            return back()->withErrors('Не е избрана основна категория');
+        }
+
+        if ($request->input()) {
+            session()->forget('filters');
+            $prod_filters = $request->input('produsers');
+            if ($prod_filters) {
+                foreach ($prod_filters as $filter) {
+                        $request->session()->put('filters.produser_'.$filter, $filter);
+                }
+            }
+            $cat_filters = $request->input('categories');
+            if ($cat_filters) {
+                foreach ($cat_filters as $filter) {
+                        $request->session()->put('filters.category_'.$filter, $filter);
+                }
+            }
+        }
+
+        if ( $request->produsers && $request->categories ) {
+            $products = Product::whereIn('produser', $request->produsers)
+                ->whereIn('groop2', $request->categories)
+                ->where('groop1', $main_category)
+            ->get();
+        } elseif ( $request->produsers ) {
+            $products = Product::whereIn('produser', $request->produsers)
+                ->where('groop1', $main_category)
+            ->get();
+        } elseif ( $request->categories ) {
+            $products = Product::whereIn('groop2', $request->categories)
+                ->where('groop1', $main_category)
+            ->get();
+        } else {
+            $products = Product::where('groop1', $main_category)->get();
+        }
+
         return $products;
 
     }
