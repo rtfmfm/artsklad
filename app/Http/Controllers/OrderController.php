@@ -93,6 +93,7 @@ class OrderController extends Controller
         }
         session()->forget('cart_items');
         session()->forget('filters');
+        session()->forget('products');
         return view('orders.success');
 
     }
