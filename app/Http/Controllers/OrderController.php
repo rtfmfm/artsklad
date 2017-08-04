@@ -37,10 +37,6 @@ class OrderController extends Controller
     {
         $order = Order::findOrFail($id);
         $order_rows = OrderProduct::where('order_id', $id)->get();
-        // foreach ($order_rows as $key => $row) {
-        // dump($row);
-        //     # code...
-        // }
 
         $articles_qty = OrderProduct::where('order_id', $id)->sum('qty');
         $products_count = $order_rows->count();
@@ -82,8 +78,6 @@ class OrderController extends Controller
         $products = Cart::where('user_id', auth()->id())->get();
         foreach ($products as $product) {
             $row = Product::where('id', $product->id)->first();
-            // dump($product);
-            // die;
             OrderProduct::create([
                 'order_id' => $order_id->id,
                 'art' => $row->art,
