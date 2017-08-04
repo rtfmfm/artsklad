@@ -1,4 +1,0 @@
-[28-Jul-2017 09:55:36 UTC] PHP Parse error:  syntax error, unexpected '(' in /home/akro060c/public_html/sites/artsklad/database/migrations/2014_10_12_000000_create_users_table.php on line 20
-[28-Jul-2017 10:06:13 UTC] PHP Fatal error:  Class 'App\Providers\Schema' not found in /home/akro060c/public_html/sites/artsklad/app/Providers/AppServiceProvider.php on line 16
-[02-Aug-2017 15:37:32 Europe/Sofia] PHP Parse error:  syntax error, unexpected T_CLASS, expecting T_STRING or T_VARIABLE or '$' in /home/akro060c/public_html/sites/artsklad/artisan on line 31
-[03-Aug-2017 09:25:18 Europe/Sofia] PHP Parse error:  syntax error, unexpected T_CLASS, expecting T_STRING or T_VARIABLE or '$' in /home/akro060c/public_html/sites/artsklad/artisan on line 31
