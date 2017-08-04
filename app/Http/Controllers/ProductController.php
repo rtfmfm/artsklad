@@ -28,17 +28,13 @@ class ProductController extends Controller
     }
 
 
-
-
     public function products(Request $request, $main_category)
     {   
 
-        // dump(session()->get('filters'));
         session()->put('main_category', $main_category);
 
         if (session()->has('products') && empty($request->input())) { 
             $products = session()->get('products');
-            // $products = $this->filterResults($request);
         } else {
             $products = $this->filterResults($request);
         }
@@ -121,12 +117,12 @@ class ProductController extends Controller
                 ->where('products.groop1', $main_category)
             ->get();
         }
-            
+
         session()->put('products', $products);
 
         return $products;
-
     }
+
 
     public function updateProducts()
     {
