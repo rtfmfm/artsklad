@@ -6,11 +6,10 @@ use Illuminate\Http\Request;
 use App\Product;
 use App\Order;
 use App\OrderProduct;
-use App\Cart;
 use App\User;
+use App\Cart;
 use Auth;
 use DB;
-use Validator;
 
 
 class OrderController extends Controller
@@ -18,7 +17,8 @@ class OrderController extends Controller
 
     public function index()
     {
-        //
+        $orders = Order::where('client_id', auth()->id())->get();
+        return view('orders.index', compact('orders'));
     }
 
 
@@ -30,13 +30,28 @@ class OrderController extends Controller
 
     public function store(Request $request)
     {
-        return "aaaa";
     }
 
 
     public function show($id)
     {
-        //
+        $order = Order::findOrFail($id);
+        $order_rows = OrderProduct::where('order_id', $id)->get();
+        // foreach ($order_rows as $key => $row) {
+        // dump($row);
+        //     # code...
+        // }
+
+        $articles_qty = OrderProduct::where('order_id', $id)->sum('qty');
+        $products_count = $order_rows->count();
+
+        $old_amount = 0;
+        foreach ($order_rows as $row) {
+            $new_amount = $row->qty * $row->price;
+            $old_amount = $old_amount + $new_amount;
+        }
+
+        return view('orders.show', compact('order_rows', 'articles_qty', 'products_count', 'old_amount', 'order'));
     }
 
 

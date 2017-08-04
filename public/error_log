@@ -191,3 +191,6 @@ Stack trace:
 [03-Aug-2017 20:40:55 EET] PHP Fatal error:  Class 'App\Http\Controllers\OrderProduct' not found in /home/akro060c/public_html/sites/artsklad/app/Http/Controllers/OrderController.php on line 69
 [03-Aug-2017 23:15:28 EET] PHP Parse error:  syntax error, unexpected 'session' (T_STRING) in /home/akro060c/public_html/sites/artsklad/app/Http/Controllers/OrderController.php on line 86
 [04-Aug-2017 08:27:43 EET] PHP Parse error:  syntax error, unexpected ']' in /home/akro060c/public_html/sites/artsklad/storage/framework/views/0ca7ab7bb8859016048608cae1efab8f1e0b32d4.php on line 5
+[04-Aug-2017 09:25:28 EET] PHP Parse error:  syntax error, unexpected ';' in /home/akro060c/public_html/sites/artsklad/storage/framework/views/f3c13c2322565c140a25f6566d5c1146cf31b4a6.php on line 64
+[04-Aug-2017 09:26:38 EET] PHP Fatal error:  Class 'App\Http\Controllers\Cart' not found in /home/akro060c/public_html/sites/artsklad/app/Http/Controllers/OrderController.php on line 65
+[04-Aug-2017 09:43:18 EET] PHP Fatal error:  Cannot use object of type Illuminate\Database\Eloquent\Builder as array in /home/akro060c/public_html/sites/artsklad/app/Http/Controllers/OrderController.php on line 39

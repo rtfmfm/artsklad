@@ -14,4 +14,8 @@ class Order extends Model
 	];
     protected $table = 'orders';
 
+    public function user() {
+            return $this->belongsTo('App\User', 'client_id');
+    }
+
 }          

@@ -57,12 +57,16 @@
                                 <a href="{{ route('home')}}">Категории</a>
                             </li>
                             <li>
+                                <a href="{{ route('orders.index')}}">История на поръчките</a>
+                            </li>
+                            <li>
                                 <a class="cart_qty" href="{{route('preview')}}"><i class="fa fa-shopping-cart fa-lg"></i>
                                 <span id="cardqty">
                                 @if(session()->has('cart_items')){{session()->get('cart_items')}} @endif
                                 </span>
                                 </a>
                             </li>
+
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
                                     {{ Auth::user()->name }} <span class="caret"></span>
