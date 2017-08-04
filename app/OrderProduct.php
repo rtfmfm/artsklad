@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Product extends Model
+class OrderProduct extends Model
 {
 
     protected $fillable = [
@@ -17,7 +17,8 @@ class Product extends Model
         'fasovka',
         'price',
         'qty',
+
 	];
-    protected $table = 'products';
+    protected $table = 'orders_products';
 
 }          

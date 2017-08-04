@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use GuzzleHttp\Client;
 use App\Product;
 use DB;
+use Auth;
 
 class ProductController extends Controller
 {
@@ -19,16 +20,25 @@ class ProductController extends Controller
         return view('products.index', compact('categories'));
     }
 
+
+    public function show($id)
+    {
+        $product = Product::findOrFail($id);
+        return view('products.show', compact('product'));
+    }
+
+
+
+
     public function products(Request $request, $main_category)
     {   
 
-        // session()->flush();
-        // dump(session()->all());
-
+        // dump(session()->get('filters'));
         session()->put('main_category', $main_category);
 
-        if (session()->has('products')) { 
+        if (session()->has('products') && empty($request->input())) { 
             $products = session()->get('products');
+            // $products = $this->filterResults($request);
         } else {
             $products = $this->filterResults($request);
         }
@@ -48,40 +58,7 @@ class ProductController extends Controller
         return view('products.products', compact('produsers', 'products', 'main_category', 'categories'));
     }
 
-
-
-    // public function handleResults(Request $request) {
-
-    //     $value = $request->input('filters');
-    //     $main_category = session()->get('main_category');
-    //     if(session()->has('filters_'.$value)) {
-    //         session()->forget('filters_'.$value);
-    //     } else {
-    //         $request->session()->put('filters_'.$value, $value);
-    //     }
-
-
-    //     $filters = session()->all();
-        
-    //     $pattern = '/filters/';
-    //     $flags = 0;
-    //     $keys = preg_grep( $pattern, array_keys( $filters ), $flags );
-    //     $vals = array();
-    //     foreach ( $keys as $key ) {
-    //         $vals[$key] = $filters[$key];
-    //     }
-
-    //     $products = Product::whereIn('produser', $vals)->where('groop1', $main_category)->paginate(20);
-        
-
-    //     if (empty($products->items())) { 
-    //         $products = Product::where('groop1', $main_category)->paginate(20);
-    //     }
-
-    //     return $products;
-
-    // }
-    
+   
     public function filterResults(Request $request) {
 
         if(session()->has('main_category')) {
@@ -107,28 +84,49 @@ class ProductController extends Controller
         }
 
         if ( $request->produsers && $request->categories ) {
-            $products = Product::whereIn('produser', $request->produsers)
+            $products = DB::table('products')->
+                leftJoin('carts', function ($join) {
+                     $join->on('products.id', '=', 'carts.product_id')
+                     ->where('carts.user_id', auth()->id()); })
+                ->select('products.*', 'carts.qty as ordered')
+                ->whereIn('produser', $request->produsers)
                 ->whereIn('groop2', $request->categories)
                 ->where('groop1', $main_category)
             ->get();
         } elseif ( $request->produsers ) {
-            $products = Product::whereIn('produser', $request->produsers)
+            $products = DB::table('products')->
+                leftJoin('carts', function ($join) {
+                     $join->on('products.id', '=', 'carts.product_id')
+                     ->where('carts.user_id', auth()->id()); })
+                ->select('products.*', 'carts.qty as ordered')
+                ->whereIn('produser', $request->produsers)
                 ->where('groop1', $main_category)
             ->get();
         } elseif ( $request->categories ) {
-            $products = Product::whereIn('groop2', $request->categories)
+            $products = DB::table('products')->
+                leftJoin('carts', function ($join) {
+                     $join->on('products.id', '=', 'carts.product_id')
+                     ->where('carts.user_id', auth()->id()); })
+                ->select('products.*', 'carts.qty as ordered')
+                ->whereIn('groop2', $request->categories)
                 ->where('groop1', $main_category)
             ->get();
-        } else {
-            $products = Product::where('groop1', $main_category)->get();
-        }
 
+        } else {
+            $products = DB::table('products')->
+                leftJoin('carts', function ($join) {
+                     $join->on('products.id', '=', 'carts.product_id')
+                     ->where('carts.user_id', auth()->id()); })
+                ->select('products.*', 'carts.qty as ordered')
+                ->where('products.groop1', $main_category)
+            ->get();
+        }
+            
         session()->put('products', $products);
+
         return $products;
 
     }
-
-
 
     public function updateProducts()
     {

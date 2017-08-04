@@ -9,7 +9,7 @@
 
                 <div class="panel-body" id="products">
                     @foreach ( $categories as $category )
-                        <a href="{{ route('products', $category->groop1) }}" class="btn btn-default" style="margin: 5px;">{{ $category->groop1 }}</a>
+                        <a href="{{ route('categories', $category->groop1) }}" class="btn btn-default" style="margin: 5px;">{{ $category->groop1 }}</a>
                     @endforeach
 
                 </div>

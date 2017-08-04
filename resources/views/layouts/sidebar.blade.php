@@ -1,5 +1,6 @@
-<form id="filters" name="filters" novalidate="novalidate" role="form" method="POST" action="{{ url('') }}">
+<form id="filters" name="filters" novalidate="novalidate" role="form" method="POST" action="">
 {{ csrf_field() }}
+
 
 <div class="panel-group">
   	<div class="panel panel-default">
@@ -8,7 +9,6 @@
         		<a data-toggle="collapse" href="#collapse1"><strong>Категории</strong></a>
       		</h4>
     	</div>
- 
 	    	<div id="collapse2" class="panel-collapse">
 	    	<div class="panel-body fixed-panel">
 					@foreach ( $categories as $category )

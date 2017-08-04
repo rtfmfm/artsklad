@@ -154,3 +154,40 @@ Stack trace:
 [01-Aug-2017 23:45:12 EET] PHP Parse error:  syntax error, unexpected ';' in /home/akro060c/public_html/sites/artsklad/app/Http/Controllers/ProductController.php on line 38
 [01-Aug-2017 23:56:23 EET] PHP Parse error:  syntax error, unexpected '$produsers' (T_VARIABLE) in /home/akro060c/public_html/sites/artsklad/app/Http/Controllers/ProductController.php on line 57
 [02-Aug-2017 00:01:32 EET] PHP Parse error:  syntax error, unexpected '}' in /home/akro060c/public_html/sites/artsklad/app/Http/Controllers/ProductController.php on line 32
+[02-Aug-2017 08:26:50 EET] PHP Parse error:  syntax error, unexpected '{' in /home/akro060c/public_html/sites/artsklad/storage/framework/views/934c814d03fe9f7fcbce06626c17658423fb1b4c.php on line 17
+[02-Aug-2017 08:27:16 EET] PHP Parse error:  syntax error, unexpected '{' in /home/akro060c/public_html/sites/artsklad/storage/framework/views/934c814d03fe9f7fcbce06626c17658423fb1b4c.php on line 17
+[02-Aug-2017 08:27:17 EET] PHP Parse error:  syntax error, unexpected '{' in /home/akro060c/public_html/sites/artsklad/storage/framework/views/934c814d03fe9f7fcbce06626c17658423fb1b4c.php on line 17
+[02-Aug-2017 09:27:00 EET] PHP Parse error:  syntax error, unexpected '{' in /home/akro060c/public_html/sites/artsklad/storage/framework/views/934c814d03fe9f7fcbce06626c17658423fb1b4c.php on line 25
+[02-Aug-2017 09:27:02 EET] PHP Parse error:  syntax error, unexpected '{' in /home/akro060c/public_html/sites/artsklad/storage/framework/views/934c814d03fe9f7fcbce06626c17658423fb1b4c.php on line 25
+[02-Aug-2017 09:27:20 EET] PHP Parse error:  syntax error, unexpected '}' in /home/akro060c/public_html/sites/artsklad/storage/framework/views/934c814d03fe9f7fcbce06626c17658423fb1b4c.php on line 25
+[02-Aug-2017 11:23:06 EET] PHP Parse error:  syntax error, unexpected ')' in /home/akro060c/public_html/sites/artsklad/storage/framework/views/934c814d03fe9f7fcbce06626c17658423fb1b4c.php on line 15
+[02-Aug-2017 11:23:12 EET] PHP Parse error:  syntax error, unexpected ')' in /home/akro060c/public_html/sites/artsklad/storage/framework/views/934c814d03fe9f7fcbce06626c17658423fb1b4c.php on line 15
+[02-Aug-2017 14:30:48 EET] PHP Parse error:  syntax error, unexpected 'value' (T_STRING) in /home/akro060c/public_html/sites/artsklad/app/Http/Controllers/ProductController.php on line 54
+[02-Aug-2017 14:32:46 EET] PHP Parse error:  syntax error, unexpected 'value' (T_STRING) in /home/akro060c/public_html/sites/artsklad/app/Http/Controllers/ProductController.php on line 54
+[02-Aug-2017 15:25:05 EET] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in /home/akro060c/public_html/sites/artsklad/app/Http/Controllers/ProductController.php on line 61
+[02-Aug-2017 15:44:18 EET] PHP Parse error:  syntax error, unexpected '::' (T_PAAMAYIM_NEKUDOTAYIM) in /home/akro060c/public_html/sites/artsklad/app/Http/Controllers/ProductController.php on line 57
+[02-Aug-2017 15:46:47 EET] PHP Parse error:  syntax error, unexpected '::' (T_PAAMAYIM_NEKUDOTAYIM) in /home/akro060c/public_html/sites/artsklad/app/Http/Controllers/ProductController.php on line 57
+[02-Aug-2017 15:57:40 EET] PHP Parse error:  syntax error, unexpected '(' in /home/akro060c/public_html/sites/artsklad/storage/framework/views/357c676bed6b5dfc44ea3724679a919f29d4a862.php on line 95
+[02-Aug-2017 16:01:31 EET] PHP Fatal error:  Class 'App\Http\Controllers\Temporder' not found in /home/akro060c/public_html/sites/artsklad/app/Http/Controllers/OrderController.php on line 58
+[02-Aug-2017 16:01:48 EET] PHP Fatal error:  Class 'App\Http\Controllers\Auth' not found in /home/akro060c/public_html/sites/artsklad/app/Http/Controllers/OrderController.php on line 59
+[02-Aug-2017 17:55:41 EET] PHP Fatal error:  Class 'App\Http\Controllers\DB' not found in /home/akro060c/public_html/sites/artsklad/app/Http/Controllers/OrderController.php on line 66
+[02-Aug-2017 17:59:59 EET] PHP Fatal error:  Class 'App\Http\Controllers\Validator' not found in /home/akro060c/public_html/sites/artsklad/app/Http/Controllers/OrderController.php on line 60
+[02-Aug-2017 18:39:22 EET] PHP Parse error:  syntax error, unexpected ''OrderController);' (T_ENCAPSED_AND_WHITESPACE) in /home/akro060c/public_html/sites/artsklad/routes/web.php on line 14
+[02-Aug-2017 18:39:26 EET] PHP Parse error:  syntax error, unexpected ''OrderController);' (T_ENCAPSED_AND_WHITESPACE) in /home/akro060c/public_html/sites/artsklad/routes/web.php on line 14
+[02-Aug-2017 18:41:42 EET] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW) in /home/akro060c/public_html/sites/artsklad/storage/framework/views/0ca7ab7bb8859016048608cae1efab8f1e0b32d4.php on line 30
+[02-Aug-2017 18:41:46 EET] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW) in /home/akro060c/public_html/sites/artsklad/storage/framework/views/0ca7ab7bb8859016048608cae1efab8f1e0b32d4.php on line 30
+[02-Aug-2017 18:42:09 EET] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW) in /home/akro060c/public_html/sites/artsklad/storage/framework/views/0ca7ab7bb8859016048608cae1efab8f1e0b32d4.php on line 30
+[02-Aug-2017 18:50:01 EET] PHP Fatal error:  Class 'App\Http\Controllers\Session' not found in /home/akro060c/public_html/sites/artsklad/app/Http/Controllers/OrderController.php on line 56
+[02-Aug-2017 19:42:57 EET] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /home/akro060c/public_html/sites/artsklad/app/Http/Controllers/OrderController.php on line 94
+[03-Aug-2017 10:07:43 EET] PHP Fatal error:  Class 'App\Http\Controllers\Toastr' not found in /home/akro060c/public_html/sites/artsklad/app/Http/Controllers/TemporderController.php on line 59
+[03-Aug-2017 10:15:38 EET] PHP Fatal error:  Class 'App\Http\Controllers\Toastr' not found in /home/akro060c/public_html/sites/artsklad/app/Http/Controllers/TemporderController.php on line 66
+[03-Aug-2017 11:13:52 EET] PHP Parse error:  syntax error, unexpected ',' in /home/akro060c/public_html/sites/artsklad/storage/framework/views/0ca7ab7bb8859016048608cae1efab8f1e0b32d4.php on line 7
+[03-Aug-2017 11:13:57 EET] PHP Parse error:  syntax error, unexpected ',' in /home/akro060c/public_html/sites/artsklad/storage/framework/views/0ca7ab7bb8859016048608cae1efab8f1e0b32d4.php on line 7
+[03-Aug-2017 11:13:58 EET] PHP Parse error:  syntax error, unexpected ',' in /home/akro060c/public_html/sites/artsklad/storage/framework/views/0ca7ab7bb8859016048608cae1efab8f1e0b32d4.php on line 7
+[03-Aug-2017 11:35:36 EET] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW) in /home/akro060c/public_html/sites/artsklad/storage/framework/views/934c814d03fe9f7fcbce06626c17658423fb1b4c.php on line 16
+[03-Aug-2017 14:11:20 EET] PHP Parse error:  syntax error, unexpected 'session' (T_STRING) in /home/akro060c/public_html/sites/artsklad/app/Http/Controllers/ProductController.php on line 104
+[03-Aug-2017 20:07:09 EET] PHP Fatal error:  Class 'App\Product' not found in /home/akro060c/public_html/sites/artsklad/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Concerns/HasRelationships.php on line 487
+[03-Aug-2017 20:22:26 EET] PHP Fatal error:  Class 'App\Http\Controllers\Order' not found in /home/akro060c/public_html/sites/artsklad/app/Http/Controllers/OrderController.php on line 60
+[03-Aug-2017 20:40:55 EET] PHP Fatal error:  Class 'App\Http\Controllers\OrderProduct' not found in /home/akro060c/public_html/sites/artsklad/app/Http/Controllers/OrderController.php on line 69
+[03-Aug-2017 23:15:28 EET] PHP Parse error:  syntax error, unexpected 'session' (T_STRING) in /home/akro060c/public_html/sites/artsklad/app/Http/Controllers/OrderController.php on line 86
+[04-Aug-2017 08:27:43 EET] PHP Parse error:  syntax error, unexpected ']' in /home/akro060c/public_html/sites/artsklad/storage/framework/views/0ca7ab7bb8859016048608cae1efab8f1e0b32d4.php on line 5

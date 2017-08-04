@@ -19,3 +19,56 @@ body {
   overflow-y: scroll;
   height: 220px
 }
+
+.titletext {color: #000;}
+.product-left { border-right: 1px solid #d3e0e9; }
+.strong {font-weight: 600;}
+.loadingmsg {
+	text-align: center;
+	position: absolute;
+	top: 30%;
+	/*left: 30%;*/
+	z-index: 9999999;
+	background-color: #F5F8FA; 
+	padding: 30px;
+	width: 100%;
+	border: 1px solid #d3e0e9;
+	display: none;
+}
+
+.thinhr {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-top: 1px solid #eee;
+}
+.content {margin-top: 70px;}
+
+
+.cart_qty {
+	background-color: #d9edf7;
+	border-left: 1px solid #bce8f1;
+	border-right: 1px solid #bce8f1;
+	color: #31708f !important;
+}
+
+.btn-danger {
+	background-color: #c00;
+	border: 1px solid #a00;
+}
+
+.textContainer { 
+    height: 50px; 
+    line-height: 85px;
+    text-align: right;
+}
+
+.textContainer h4 {
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.confirm-order-btn {
+	height:80px;
+	line-height: 70px;
+	text-transform: uppercase;
+}
